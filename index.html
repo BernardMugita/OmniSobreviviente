@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/prabowow" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/testimonials.css">
+    <link rel="stylesheet" href="./ionicons-2.0.1/css/ionicons.min.css">
     <title>OmniSobreviviente</title>
-    <link rel = "icon" href ="./Resources/titlelogo.png">
+    <link rel ="icon" href ="./Resources/titlelogo.png">
 </head>
 <body>
     <header id="header">
@@ -27,7 +29,10 @@
         </div>
         
     </header><br><br><br>
-    <div class="mission"">
+    <div class="about">
+        <div class="container">
+        <h1>About<br>Us</h1>
+    <div class="mission">
         <div class="container-fluid">
             <div class="grid">
                 <div class="left">
@@ -66,11 +71,91 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div><br><br><br>
-    
+    <div class="gallery">
+    <div class="container">
+        <h1><strong>Our Work</strong></h1><br><br>
+        <div class="image-gallery">
+                    <a href="./Resources/OurWork/Banner.png" class="img-1"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/Mugita.png" class="img-2"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/AboutImage.png" class="img-3"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/NairobiNationalParkTour2.png" class="img-4"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/Nurths2.png" class="img-5"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/TheWhiteLotusfront.png" class="img-6""><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/eventorganizing.png" class="img-7"><i class="icon ion-md-expand"></i></a>
+                    <a href="./Resources/OurWork/TheWhiteLotus.png" class="img-8"><i class="icon ion-md-expand"></i></a>
+        </div>
+    </div>
+    </div><br><br><br><br>  
+
     <div class="testimonials">
         <h1>Testimonials</h1>
-        
+        <div class="container" id="cont">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="test">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                        <p>
+                            Neville Mwimah is a young entrepreneur interested in music 
+                            promotion and web development
+                        </p> 
+                        <h3>Neville</h3>
+                        <p>PlausemediaKE</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="./Resources/profileimg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                        <p>
+                            Martin Mutinda is a brilliant web manager and Search Engine
+                            Optiminzation(S.E.O) expert. 
+                        </p> 
+                        <h3>Martin</h3>
+                        <p>Jaister Technologies</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="./Resources/profileimg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                        <p>
+                            Judith Gesongo is a brilliant social media marketting director with 
+                            an active social media presence. She is head of Marketting at OmniSobreviviente. 
+                        </p> 
+                        <h3>Judith</h3>
+                        <p>OmniSobreviviente</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="./Resources/profileimg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                        <p>
+                            Neville Mwimah is a young entrepreneur interested in music 
+                            promotion and web development
+                        </p> 
+                        <h3>Neville</h3>
+                        <p>PlausemediaKE</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="./Resources/profileimg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <section id="footer">  
         <div class="container">  
@@ -113,11 +198,28 @@
             </div>      
             <div class="row">  
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">  
-           <p class="h6"> 2021 &#169 All right Reversed. <a class="text-green ml-2" href="#" target="_blank">JeromeMugita</a> </p>  
+           <p class="h6"> 2021 &#169 All right Reversed. <a class="text-green ml-2" href="#" target="_blank">OmniSobreviviente</a> </p>  
             </div>  
             <hr>  
             </div>      
             </div>  
-    </section>  
+    </section>
+<script>
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+    }
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-2400px)";
+    }
+</script>
 </body>
 </html>

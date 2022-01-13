@@ -163,7 +163,6 @@ background: #7c8490;
     display: flex;
     align-items: center;
     background: #101010;
-    margin-top: -60px;
 }
 
 .vision{
@@ -201,6 +200,7 @@ background: #7c8490;
 }
 .right p{
     text-align: justify;
+    font-family: monospace;
 
 }
 .vision .right img{
@@ -223,5 +223,20 @@ background: #7c8490;
 }
 .vision .left p{
     text-align: justify;
+    font-family: monospace;
 
+}
+.about{
+    text-align: left;   
+    background: #101010;
+    height: 250vh;
+    margin-top: -100px;
+    font-family: monospace;
+}
+
+.about h1{
+    color: white;
+    margin-top: 25px;
+    margin-left: 50px;
+    text-align: right;
 }
